@@ -43,7 +43,7 @@ gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
 ## Design da Solução
 Na solução desse problema foi utilizado o Prometheus, Grafana, Docker, Docker-Compose e Python e Slack
 
-![Arquitetura do desafio](https://media.discordapp.net/attachments/987084289214668892/987331689053294612/arquitetura-gabriel.drawio.png)
+![Arquitetura do desafio](https://media.discordapp.net/attachments/987084289214668892/987339847645663282/arquitetura-gabriel.drawio_3.png)
 
 Os dados são gerados por uma aplicação em python, que é replicadas em vários containers. 
 
