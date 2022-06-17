@@ -4,4 +4,4 @@ ADD agente.py .
 
 RUN pip install prometheus-client 
 
-CMD [ "python", "./agente.py" ]
+CMD [ "python", "./agent.py" ]

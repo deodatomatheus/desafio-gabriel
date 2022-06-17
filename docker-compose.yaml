@@ -33,7 +33,6 @@ services:
 
   grafana:
     image: grafana/grafana
-    container_name: grafana
     ports:
       - 80:3000
     networks:
@@ -44,10 +43,8 @@ services:
     depends_on:
       - prometheus
 
-
-
   agent-exporter-0:
-    image: python-teste
+    image: python-agente
     ports:
       - 9100:8000
     networks:
@@ -61,7 +58,7 @@ services:
           memory: 64M
 
   agent-exporter-1:
-    image: python-teste
+    image: python-agente
     ports:
       - 9101:8000
     networks:
@@ -75,7 +72,7 @@ services:
           memory: 64M
 
   agent-exporter-2:
-    image: python-teste
+    image: python-agente
     ports:
       - 9102:8000
     networks:
@@ -89,7 +86,7 @@ services:
           memory: 64M
 
   agent-exporter-3:
-    image: python-teste
+    image: python-agente
     ports:
       - 9103:8000
     networks:
@@ -103,7 +100,7 @@ services:
           memory: 64M
 
   agent-exporter-4:
-    image: python-teste
+    image: python-agente
     ports:
       - 9104:8000
     networks:
