@@ -35,11 +35,6 @@ gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
 	[Para mais informações sobre a instalação do docker-compose clique aqui](https://linuxhostsupport.com/blog/how-to-install-and-configure-docker-compose-on-ubuntu-20-04/)
   
 
-## Para executar
-1. Clone esse repositorio
-2. Entre no diretório do projeto e execute o comando
-	`sudo docker stack deploy -c docker-compose.yaml monitor`
-
 ## Design da Solução
 Na solução desse problema foi utilizado o Prometheus, Grafana, Docker, Docker-Compose e Python e Slack
 
