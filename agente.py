@@ -79,16 +79,16 @@ def funcThreadHd(id):
             if(caosNumber < errorProbability):
                 isOffline = False
                 secondsOffline = 0
-                camGauges[id].set(0)
+                hdGauges[id].set(0)
                 print("HD "+str(id)+" is ONLINE" )
             else:
-                camGauges[id].inc()
+                hdGauges[id].inc()
                 secondsOffline+=1
                 print("HD "+str(id)+" is offline for "+ str(secondsOffline) + " seconds") 
         else:
             if(caosNumber < errorProbability):
-                camCounters[id].inc() 
-                camGauges[id].inc()
+                hdCounters[id].inc() 
+                hdGauges[id].inc()
                 secondsOffline+=1
                 isOffline = True
                 print("HD "+str(id)+" is offline for "+ str(secondsOffline) + " seconds") 
