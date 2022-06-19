@@ -86,3 +86,7 @@ Para subir os containers, basta executar o comando:
 
 Caso precise encerrar os containers:
 `sudo docker stack rm monitor`
+
+As aplicações podem ser acessadas em:
+* Grafana: `localhost:80`
+* Prometheus: `localhost:9090`
